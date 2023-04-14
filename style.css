@@ -1,0 +1,369 @@
+body {
+  background-image: url('matchingCardsImages/Background2.jfif');    
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+h1 { 
+text-align: center;
+letter-spacing: 2px;
+color: rgb(238, 241, 215);
+text-shadow: 2px 2px 4px #000000;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style: oblique;
+display: flex;
+border-radius: 50px;
+background-image: url('matchingCardsImages/Raindrops.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+min-width: 400px;
+min-height: 200px;
+padding: 10px;
+border: 3px  #1c87c9;
+vertical-align: middle;
+max-width: 450px;
+max-height: fit-content;
+margin: 20px auto 20px;
+display: flex;
+align-items: center;
+justify-content: center 
+}
+
+.legButton { 
+    text-align: center;
+    font-size:x-large;
+    letter-spacing: 2px;
+    color: rgb(238, 241, 215);
+    text-shadow: 2px 2px 4px #000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    
+    display: flex;
+    border-radius: 70px;
+    background-image: url('matchingCardsImages/Legs.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 140px;
+    padding: 10px;
+    border: 3px  #1c87c9;
+    vertical-align: middle;
+    
+    margin: 20px auto 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center 
+    }
+
+.backButton { 
+    text-align: center;
+    font-size:x-large;
+    letter-spacing: 2px;
+    color: rgb(238, 241, 215);
+    text-shadow: 2px 2px 4px #000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    
+    display: flex;
+    border-radius: 70px;
+    background-image: url('matchingCardsImages/Back.gif');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 200px;
+    height: 140px;
+    padding: 10px;
+    border: 3px  #1c87c9;
+    vertical-align: middle;
+    
+    margin: 20px auto 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center 
+    }
+
+.chestButton { 
+    text-align: center;
+    font-size:x-large;
+    letter-spacing: 2px;
+    color: rgb(238, 241, 215);
+    text-shadow: 2px 2px 4px #000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    
+    display: flex;
+    border-radius: 70px;
+    background-image: url('matchingCardsImages/Chest.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 140px;
+    padding: 10px;
+    border: 3px  #1c87c9;
+    vertical-align: middle;
+    
+    margin: 20px auto 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center 
+    }
+
+    .nextButton { 
+      text-align: center;
+      font-size: large;
+      letter-spacing: 2px;
+      color: rgb(255, 253, 218);
+      text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: oblique;
+      
+      display: flex;
+      border-radius: 50px;
+      background-image: url('matchingCardsImages/Gokustatic.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 150px;
+      height: 100px;
+      padding: 10px;
+      border: 3px  #1c87c9;
+     
+      
+      margin: 20px auto 20px;
+  
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+      }
+
+.nextButton:hover {
+  background-image: url('matchingCardsImages/Gokunext.gif');
+}
+
+.doneButton { 
+  text-align: center;
+  font-size: large;
+  letter-spacing: 2px;
+  color: rgb(255, 253, 218);
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+  
+  display: flex;
+  border-radius: 50px;
+  background-image: url('matchingCardsImages/goku-done.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 250px;
+  height: 200px;
+  padding: 30px;
+  border: 3px  #1c87c9;
+ 
+  
+  margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+
+.hvr-shrink {
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+ }
+ .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+ }
+
+
+.wrapper{
+  max-width: 500px;
+  min-height: fit-content;
+  max-height: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid black;
+  grid-template-columns: 50px 1fr;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
+.card {
+  max-width: fit-content;
+  min-width: 190px;
+  min-height: 50px;
+  max-height: fit-content;
+  border-radius: 40px;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin: 20px 100px 20px;
+ }
+ 
+ .card-details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+ }
+ 
+ .card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+ }
+ 
+ .text-body {
+  color: rgb(134, 134, 134);
+  text-align: center;
+
+ }
+ 
+ /*Text*/
+ .text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+ }
+ 
+ /*Hover*/
+ .card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+ }
+ 
+ .card-selected {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+ }
+
+ .card-img-top {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  object-fit: fill;
+  max-width: 200px;
+  max-height: max-content;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  border-color: #000000;
+  margin: 5px auto 5px;
+ }
+
+#card-column {
+  max-width: 740px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card-small {
+  max-width: fit-content;
+  min-width: 190px;
+  min-height: 50px;
+  max-height: fit-content;
+  border-radius: 40px;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+ }
+
+ .input {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+}
+
+.input:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696,
+             -13px -13px 100px #ffffff;
+}
+
+.input:not(:placeholder-shown) {
+  background-color: rgb(115, 211, 115);
+}
+
+
+  
+.link-button {
+  background: #FBCA1F;
+  font-family: inherit;
+  color: #000000;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.link-button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+  text-decoration: none;
+}
+
+.link-button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+  text-decoration: none;
+
+}
