@@ -15,7 +15,7 @@
   <div id="card-column"> 
 
 
-    <div class="card-small" id="hide-pullup">
+    <div class="card-small" id="hide-pullups">
       <div class="card-details">
         <p class="text-title">Pull Ups</p>
         <img class="card-img-top" src="matchingCardsImages/pullupgood.gif" alt="...">
@@ -31,7 +31,7 @@
     </div>
 
 
-    <div class="card" id="hide-backrow">
+    <div class="card" id="hide-backrows">
       <div class="card-details">
         <p class="text-title">Bent Over Rows</p>
         <img class="card-img-top" src="matchingCardsImages/BentOverRow.gif" alt="...">
@@ -114,6 +114,8 @@
     <div class="card">
       <div class="card-details">
         <input type="hidden" name="date_time">
+        <input type="hidden" name="exercise_day">
+        <input type="hidden" name="message_content">
         <label for="set/reps">Your name below (optional):</label>
         <input type="text" id="set/reps" autocomplete="off" name="user_name" class="input" placeholder="Name">
         <label for="set/reps">Your email address below:</label>
@@ -130,7 +132,7 @@
 </form>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script src="back-day-scripts.js"> </script>
+<script src="scripts.js"> </script>
 
 <script>
 hideAllBackDayCards();

@@ -114,12 +114,16 @@
     <div class="card">
       <div class="card-details">
         <input type="hidden" name="date_time">
+        <input type="hidden" name="exercise_day">
+        <input type="hidden" name="message_content">
         <label for="set/reps">Your name below (optional):</label>
         <input type="text" id="set/reps" autocomplete="off" name="user_name" class="input" placeholder="Name">
         <label for="set/reps">Your email address below:</label>
         <input type="email" id="set/reps" autocomplete="off" name="user_email" class="input" placeholder="Email">
         <label>Any notes you want to include in today's record? </label>
         <textarea name="message"></textarea>
+
+        <button type="button" onclick="saveUserInputs()"> Save your Data</button>
       </div>
     </div>
 
@@ -130,12 +134,13 @@
 </form>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script src="leg-day-scripts.js"> </script>
+<script src="scripts.js"> </script>
 
 <script>
 hideAllBackDayCards();
 sendEmail();
-</script> 
+</script>
+
 
 </body>
 
