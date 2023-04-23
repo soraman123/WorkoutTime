@@ -10,12 +10,16 @@
 </head>
 
 <body>
-  <h1> Below is the list of exercises you've chosen. Feel free to track your workout! </h1>
+  <h1> Below is the list of exercises you've chosen. <br> Feel free to track your workout! </h1>
+  
+  <div class="card-glass">
+    <p>You can <strong>save</strong> your progress at the bottom of the page, so it isn't deleted if the page refreshes!</p>
+  </div>
   <form id="contact-form">
   <div id="card-column"> 
 
 
-    <div class="card-small" id="hide-pullups">
+    <div class="card" id="hide-pullups">
       <div class="card-details">
         <p class="text-title">Pull Ups</p>
         <img class="card-img-top" src="matchingCardsImages/pullupgood.gif" alt="...">
@@ -35,7 +39,7 @@
       <div class="card-details">
         <p class="text-title">Bent Over Rows</p>
         <img class="card-img-top" src="matchingCardsImages/BentOverRow.gif" alt="...">
-        <a href="https://youtube.com/shorts/gVr_qmy3Gfg?feature=share" target="_blank" class="link-button">Click here to see <br>pull-up progressions</a>
+        <a href="https://youtu.be/kBWAon7ItDw" target="_blank" class="link-button">Click here to see <br>proper form</a>
         <p class="text-body">Feel free to track your sets below!</p>
 
         <label for="set/reps">Set 1:</label>
@@ -51,7 +55,7 @@
       <div class="card-details">
         <p class="text-title">Curls</p>
         <img class="card-img-top" src="matchingCardsImages/CrazyCurlsOG.gif" alt="...">
-        <a href="https://youtube.com/shorts/gVr_qmy3Gfg?feature=share" target="_blank" class="link-button">Click here to see <br>pull-up progressions</a>
+        <a href="https://youtube.com/shorts/N6paU6TGFWU?feature=share" target="_blank" class="link-button">Click here to see <br>proper barbell form</a>
         <p class="text-body">Feel free to track your sets below!</p>
 
         <label for="set/reps">Set 1:</label>
@@ -67,7 +71,7 @@
       <div class="card-details">
         <p class="text-title">Shrugs</p>
         <img class="card-img-top" src="matchingCardsImages/shrugs.gif" alt="...">
-        <a href="https://youtube.com/shorts/gVr_qmy3Gfg?feature=share" target="_blank" class="link-button">Click here to see <br>pull-up progressions</a>
+        <a href="https://youtube.com/shorts/zdBh_Ul2psI?feature=share" target="_blank" class="link-button">Click here to see <br>proper form</a>
         <p class="text-body">Feel free to track your sets below!</p>
 
         <label for="set/reps">Set 1:</label>
@@ -83,7 +87,7 @@
       <div class="card-details">
         <p class="text-title">Supermans</p>
         <img class="card-img-top" src="matchingCardsImages/superman.gif" alt="...">
-        <a href="https://youtube.com/shorts/gVr_qmy3Gfg?feature=share" target="_blank" class="link-button">Click here to see <br>pull-up progressions</a>
+        <a href="https://youtu.be/ydT74SAts7M?t=165" target="_blank" class="link-button">Click here to see <br>proper form</a>
         <p class="text-body">Feel free to track your sets below!</p>
 
         <label for="set/reps">Set 1:</label>
@@ -99,7 +103,7 @@
       <div class="card-details">
         <p class="text-title">Good Mornings</p>
         <img class="card-img-top" src="matchingCardsImages/goodmorning.gif" alt="...">
-        <a href="https://youtube.com/shorts/gVr_qmy3Gfg?feature=share" target="_blank" class="link-button">Click here to see <br>pull-up progressions</a>
+        <a href="https://youtu.be/vKPGe8zb2S4?t=38" target="_blank" class="link-button">Click here to see <br>proper form</a>
         <p class="text-body">Feel free to track your sets below!</p>
 
         <label for="set/reps">Set 1:</label>
@@ -120,8 +124,11 @@
         <input type="text" id="set/reps" autocomplete="off" name="user_name" class="input" placeholder="Name">
         <label for="set/reps">Your email address below:</label>
         <input type="email" id="set/reps" autocomplete="off" name="user_email" class="input" placeholder="Email">
-        <label>Any notes you want to include in today's record? </label>
+        <label>Enter any notes you'd like to include in the email message below: </label>
         <textarea name="message"></textarea>
+
+        <button type="button" onclick="saveUserInputs()" style="color:rgb(5, 143, 39);font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: oblique;"> <b> Save your progress! </b>(In case of page refresh)</button>
       </div>
     </div>
 
@@ -130,7 +137,11 @@
   <input type="submit" class="doneButton hvr-shrink" id="doneButton" value='Email me my results!'>
 
 </form>
-
+<div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+</div>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="scripts.js"> </script>
 

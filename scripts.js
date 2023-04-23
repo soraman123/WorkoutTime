@@ -1,14 +1,16 @@
-// Test, currently only for leg day page; has changed how submit button works
+// On reload of page 2 (any exercise day), run getUserInputs:
 
 document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('load', function() {
-    if (location.pathname === '/leg-day-page-2.html') {
+    if (location.pathname.includes('page-2.html')) {
       getUserInputs();
     }
   });
 });
 
-function clearStorage(){
+// Clear local storage. Runs on click of any exercise day button on index.html.
+
+function clearLocalStorage(){
   localStorage.clear();
 }
 
@@ -164,7 +166,7 @@ function goToPageOne(button){
   }
 };
 
-// Add click event to Next Button, to run updateSelectedExercisesArray and then take us to page 3:
+// Add click event to Next Button, to run updateSelectedExercisesArray and then take us to page 2:
 
 function nextButtonToPageTwo(){
   document.querySelector('#nextButton').addEventListener('click', () => {
@@ -177,50 +179,36 @@ function nextButtonToPageTwo(){
 
 nextButtonToPageTwo();
 
-// Below we save user inputs:
+// Below we save user inputs (works for all pages), attached the function to a Save button:
 
 function saveUserInputs() {
-
   var inputs = [];
-
   allExerciseNames.forEach(function(exerciseName){ 
-
     var setOneName = `${exerciseName}_set_1`;
     var setOneValue = document.forms[0][setOneName].value;
     inputs.push(setOneValue);
-
-
     var setTwoName = `${exerciseName}_set_2`;
     var setTwoValue = document.forms[0][setTwoName].value;
     inputs.push(setTwoValue);
-
-
-
   });
-
   localStorage.setItem("userSetInputs", JSON.stringify(inputs));
-
   console.log(localStorage.getItem("userSetInputs"));
-
 };
 
-// Below we retrieve userinputs: 
+// Below we retrieve userinputs (only works for leg page), attached the function to run on page load event: 
 
 function getUserInputs() {
-
   var storedInputs = JSON.parse(localStorage.getItem("userSetInputs"));
     for (var i = 0; i < 6; i++) {
-      var exerciseName = allLegDayExercises[i];
+      var exerciseName = allExerciseNames[i];
       var setOneName = `${exerciseName}_set_1`;
       document.forms[0][setOneName].value = storedInputs[i*2];
     }
-
     for (var i = 0; i < 6; i++) {
-      var exerciseName = allLegDayExercises[i];
+      var exerciseName = allExerciseNames[i];
       var setOneName = `${exerciseName}_set_2`;
       document.forms[0][setOneName].value = storedInputs[i*2+1];
     }
-
 };
 
 
@@ -228,16 +216,6 @@ function getUserInputs() {
 
 /* Future ideas: 
 
-
-1. Use local storage to save input fields, so if someone goes back and forward it'll save their inputted data?
-
-
-- Save selected cards and user input even on refresh.
-
-
-function testSaveInput() {
-  var inputt = document.getElementById('test-input').value;
-  alert(inputt);
-}
+- Save selected cards on refresh.
 
 */

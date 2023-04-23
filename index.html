@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <h1> Select the muscle group you'd like to work out below! </h1>
-    <button type="button" class="legButton hvr-shrink" onclick="goToPageOne(this); clearStorage();"> Legs </button>
-    <button type="button" class="backButton hvr-shrink" onclick="goToPageOne(this); clearStorage();"> Back </button>
-    <button type="button" class="chestButton hvr-shrink" onclick="goToPageOne(this); clearStorage();"> Chest </button>
+    <h1> Select the muscle group you'd like to work out today! </h1>
+    <button type="button" class="legButton hvr-shrink" onclick="goToPageOne(this); clearLocalStorage();"> Legs </button>
+    <button type="button" class="backButton hvr-shrink" onclick="goToPageOne(this); clearLocalStorage();"> Back </button>
+    <button type="button" class="chestButton hvr-shrink" onclick="goToPageOne(this); clearLocalStorage();"> Chest </button>
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+     </div>
     <script src="Scripts.js"> </script>
 </body>
 </html>
