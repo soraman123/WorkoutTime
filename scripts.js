@@ -14,7 +14,7 @@ function clearLocalStorage(){
   localStorage.clear();
 }
 
-// Created an array for each exercise day:
+// Createdd an array for each exercise day:
 
 var allLegDayExercises = ['squats','lunges','deadlifts','hipbridges','nordiccurls','calfraises'];
 var allBackDayExercises = ['pullups','backrows','curls','shrugs','supermans','goodmornings'];
@@ -213,9 +213,49 @@ function getUserInputs() {
 
 
 
+// Import the functions you need from the SDKs you need
+import firebase from "firebase/app";
+// import firebase from ".public/index.html";
+import { initializeApp } from "firebase/app";
+import { getStorage } from "firebase/storage";
 
-/* Future ideas: 
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAZLL5dVS5Dhzz0uxnoail1fGQ89iiJJNw",
+  authDomain: "data-for-workout-time.firebaseapp.com",
+  databaseURL: "https://data-for-workout-time-default-rtdb.firebaseio.com",
+  projectId: "data-for-workout-time",
+  storageBucket: "data-for-workout-time.appspot.com",
+  messagingSenderId: "931381913869",
+  appId: "1:931381913869:web:e71cc47c4cf636492b2844",
+  measurementId: "G-0WLWHFCKFS"
+};
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-- Save selected cards on refresh.
+// Initialize Cloud Storage and get a reference to the service
+const storage = getStorage(app);
 
-*/
+// Get a reference to your Firestore database??
+var db = firebase.firestore();
+
+
+const query = db.collection('Exercise Names').doc('Arrays of Exercises');
+
+
+
+query.get().then((doc) => {
+    if (doc.exists) {
+        const data = doc.data();
+        const arrayData = doc.data()['Back Day Exercises'];
+        
+        // Use the array data in your code
+        for (let i = 0; i < arrayData.length; i++) {
+            console.log(arrayData[i]);
+        }
+    } else {
+        console.log("No such document!");
+    }
+}).catch((error) => {
+    console.log("Error getting document:", error);
+});
